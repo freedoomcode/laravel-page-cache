@@ -1,0 +1,12 @@
+{
+    "name": "helingfeng/laravel-page-cache",
+    "authors": [
+        {
+            "name": "helingfeng",
+            "email": "857190327@qq.com"
+        }
+    ],
+    "require": {
+        "jenssegers/agent": "^2.6"
+    }
+}
