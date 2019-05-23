@@ -53,7 +53,7 @@ class HtmlCache
                 // ...
             }
         }
-        $fileName = md5(path);
+        $fileName = md5($path);
         return $fullPath . DIRECTORY_SEPARATOR . $fileName;
     }
 
