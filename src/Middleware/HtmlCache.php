@@ -35,8 +35,8 @@ class HtmlCache
     public function getRealFileNameByPath($path)
     {
         $prefix = storage_path('framework/cache/static_page');
-        $key = $this->app['config']->get('page_cache.file_directory_key', static_html_file_directory);
-        $expires = $this->app['config']->get('page_cache.file_expires', 5);
+        $key = app('config')->get('page_cache.file_directory_key', static_html_file_directory);
+        $expires = app('config')->get('page_cache.file_expires', 5);
         if(Cache::has($key)){
             $directory = Cache::get($key, date('YmdHis'));
         }else{
