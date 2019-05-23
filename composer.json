@@ -6,6 +6,11 @@
             "email": "857190327@qq.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "PageCache\\": "src/"
+        }
+    },
     "require": {
         "jenssegers/agent": "^2.6"
     }
