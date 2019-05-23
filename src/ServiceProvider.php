@@ -45,6 +45,11 @@ class PageCacheServiceProvider extends ServiceProvider
         $this->publishes([$configPath => $this->getConfigPath()], 'config');
     }
 
+    protected function getConfigPath()
+    {
+        return config_path('page_cache.php');
+    }
+
     protected function registerRouteMiddleware()
     {
         // register route middleware.
